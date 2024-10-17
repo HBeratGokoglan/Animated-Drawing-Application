@@ -158,4 +158,13 @@ while True:
     frm[:, :, 2] = op[:, :, 2]  # Update red channel
 
     # Blend the tools image into the frame
-    frm[:max_y, ml:max_x] = cv2.addWeighted(tools,
+    frm[:max_y, ml:max_x] = cv2.addWeighted(tools, 0.7, frm[:max_y, ml:max_x], 0.3, 0)
+
+    # Display the currently selected tool
+    cv2.putText(frm, curr_tool, (270 + ml, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
+    cv2.imshow("Drawing Application", frm)  # Show the frame in a window
+
+    if cv2.waitKey(1) == 27:  # EXIT >>> ESC Key 
+        cv2.destroyAllWindows()  # Close all OpenCV windows
+        cap.release()  # Release the video capture object
+        break  # Exit the loop
