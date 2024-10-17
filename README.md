@@ -22,26 +22,28 @@ To run this application, ensure you have the following libraries installed:
 You can install these libraries using pip:
 ```bash
 pip install mediapipe opencv-python numpy
-Usage
+##Usage
 Clone the repository or download the code.
 Make sure your webcam is connected and working.
 Run the Python script:
 python drawing_application.py
 Use your hand to select a tool from the left side of the screen and start drawing!
-Controls
+
+##Controls
 Select Tool: Position your index finger within the tool selection area to choose a drawing tool.
 Draw Shapes: Use the corresponding tool to draw shapes or freehand on the canvas.
 Erase: Select the eraser tool to remove any drawings.
-Screenshots
+
+##Screenshots
 <!-- Replace with an actual screenshot of your application -->
 
-Contributing
+##Contributing
 Contributions are welcome! If you have suggestions for improvements or new features, please create an issue or submit a pull request.
 
-License
+##License
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
-Acknowledgments
+##Acknowledgments
 MediaPipe for providing the hand tracking framework.
 OpenCV for powerful image processing capabilities.
 
